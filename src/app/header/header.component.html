@@ -1,0 +1,25 @@
+<header class="w-100 position-sticky top-0 py-3 px-3 bg-primary row m-auto align-items-center">
+    <div class="col-2">
+        <span class="text-secondary">Logo</span>
+    </div>
+
+    <i class="bi bi-search-heart text-secondary col-1"></i>
+
+    <input class="col-7 align-items-center bg-secondary" type="search" placeholder="Search">
+
+    <nav class="bg-dark active" [class.active]="showNav">
+        <a class="text-white d-block mb-2 text-decoration-none">Inicio</a>
+        <a class="text-white d-block mb-2 text-decoration-none">Ajustes</a>
+        <a class="text-white d-block mb-2 text-decoration-none">Ordenar por</a>
+        <a class="text-white d-block text-decoration-none">Otro</a>
+
+        <button type="button" class="btn btn-light position-absolute" (click)="toggleNav()">
+            <i class="bi bi-x-lg"></i>
+        </button>
+    </nav>
+    <div class="col-2 text-end">
+        <button type="button" class="btn btn-light align-items-center" (click)="toggleNav()">
+            <i class="bi bi-list text-primary"></i>
+        </button>
+    </div>
+</header>
