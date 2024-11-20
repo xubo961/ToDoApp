@@ -12,6 +12,7 @@ import { LayoutSinHeaderComponent } from './layout-sin-header/layout-sin-header.
 import { Error404Component } from './error404/error404.component';
 import { RegisterComponent } from './register/register.component';
 import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
+import { AddNewTaskComponent } from './add-new-task/add-new-task.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.co
     LayoutSinHeaderComponent,
     Error404Component,
     RegisterComponent,
-    PaginaPrincipalComponent
+    PaginaPrincipalComponent,
+    AddNewTaskComponent
   ],
   imports: [
     BrowserModule,

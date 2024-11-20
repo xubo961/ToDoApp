@@ -7,6 +7,7 @@ import {LayoutConHeaderComponent} from "./layout-con-header/layout-con-header.co
 import {HeaderComponent} from "./header/header.component";
 import {RegisterComponent} from "./register/register.component";
 import {PaginaPrincipalComponent} from "./pagina-principal/pagina-principal.component";
+import {AddNewTaskComponent} from "./add-new-task/add-new-task.component";
 
 const routes: Routes = [
   {
@@ -23,6 +24,13 @@ const routes: Routes = [
     component: LayoutConHeaderComponent,
     children: [
         {path: "pagPrincipal", component: PaginaPrincipalComponent},
+    ]
+  },
+  {
+    path: "",
+    component:LayoutSinHeaderComponent,
+    children: [
+        {path: "add", component: AddNewTaskComponent},
     ]
   },
 
