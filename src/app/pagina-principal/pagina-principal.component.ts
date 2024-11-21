@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-pagina-principal',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './pagina-principal.component.scss'
 })
 export class PaginaPrincipalComponent {
+  constructor(
+      private router: Router
+  ) {}
+
+  goAdd() {
+    this.router.navigate(['add']);
+  }
 
 }

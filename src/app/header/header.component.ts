@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-header',
@@ -13,4 +14,11 @@ export class HeaderComponent {
     this.showNav = !this.showNav;
   }
 
+  constructor(
+      private router: Router
+  ) {}
+
+  goLogin(): void {
+    this.router.navigate(['']);
+  }
 }

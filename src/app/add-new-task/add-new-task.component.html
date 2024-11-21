@@ -1,27 +1,38 @@
-<h1 class="addTask text-center">ADD NEW TASK</h1>
-<div class="divPrincipal text-center row ">
-<form>
-    <label for="tittle">Tittle</label><br>
-    <input id="tittle" type="text" placeholder="Tittle" required><br>
+<div class="divPrincipal text-center row"><h1 class="addTask text-center">ADD NEW TASK</h1>
 
-    <label for="description">Description</label><br>
-    <textarea id="description" rows="5" cols="23" placeholder=""></textarea><br>
+    <div class="divSecundario row">
+        <div>
+            <form>
+                <label for="tittle">Tittle</label><br>
+                <input id="tittle" type="text" placeholder="Tittle" required><br>
 
-    <div>
-    <label for="FechaActual">Fecha</label><br>
-    <input type="date" id="FechaActual">
+                <label for="description">Description</label><br>
+                <textarea id="description" rows="5" cols="23" placeholder=""></textarea><br>
+
+
+                <label for="FechaActual">Fecha</label><br>
+                <input type="date" id="FechaActual"><br><br>
+
+                <label for="rol">Rol</label>
+                <select id="rol" name="rol" required>
+                    <option value="Trabajo" selected>Elige</option>
+                    <option value="Estudio">Estudio</option>
+                    <option value="">Profesor</option>
+                    <option value="Estudio">Profesor</option>
+                    <option value="Estudio">Profesor</option>
+                </select>
+            </form>
+        </div>
+        <div class="row">
+            <p class="col-6 mt-3">
+                <button type="button" class="btn btn-primary" (click)="goPagPrincipal()">Submit</button>
+            </p>
+
+            <p class="col-6 mt-3">
+                <button type="button" class="btn btn-primary" (click)="goPagPrincipal()">Cancel</button>
+            </p>
+        </div>
     </div>
-</form>
-
-<p class="col-6 mt-3">
-    <button type="button" class="btn btn-primary">Submit</button>
-</p>
-
-<p class="col-6 mt-3">
-    <button type="button" class="btn btn-primary">Cancel</button>
-</p>
-
-
 </div>
 
 

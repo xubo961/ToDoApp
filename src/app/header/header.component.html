@@ -7,11 +7,12 @@
     <input class="col-7 align-items-center bg-secondary" type="search" placeholder="Search">
 
     <nav class="bg-dark active" [class.active]="showNav">
-        <a class="text-white d-block mb-4 text-decoration-none">Inicio</a>
-        <a class="text-white d-block mb-4 text-decoration-none">Ajustes</a>
-        <a class="text-white d-block mb-4 text-decoration-none">Ordenar por</a>
-        <a class="text-white d-block mb-4 text-decoration-none">Otro</a>
-        <a class="text-white d-block mb-4 text-decoration-none">Contáctanos</a>
+        <button type="button" class="text-primary d-block mb-4 text-decoration-none bg-black mt-5">Inicio</button>
+        <button type="button" class="text-primary d-block mb-4 text-decoration-none bg-black">Ajustes</button>
+        <button type="button" class="text-primary d-block mb-4 text-decoration-none bg-black">Ordenar por</button>
+        <button type="button" class="text-primary d-block mb-4 text-decoration-none bg-black">Otro</button>
+        <button type="button" class="text-primary d-block mb-4 text-decoration-none bg-black">Contáctanos</button>
+        <button type="button" class="text-primary d-block mb-4 text-decoration-none bg-black" (click)="goLogin()">Cerrar Sesión</button>
         <a class="text-white d-block mb-4 text-decoration-none text-end">&copy; | 2024 | DeLokos :D</a>
 
         <button type="button" class="btn btn-light position-absolute" (click)="toggleNav()">
