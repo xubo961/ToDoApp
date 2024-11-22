@@ -18,3 +18,35 @@ p {
 
 }
 
+
+section {
+  display: flex;
+  margin: 1em auto;
+  outline: 1px dashed lightgray;
+  flex: none;
+  overflow: auto;
+}
+
+/* scroll-snap */
+.x.mandatory-scroll-snapping {
+  scroll-snap-type: x mandatory;
+}
+.x.proximity-scroll-snapping {
+  scroll-snap-type: x proximity;
+}
+
+div {
+  text-align: center;
+  scroll-snap-align: center;
+  flex: none;
+}
+
+.x div {
+  line-height: 128px;
+  font-size: 64px;
+  width: 100%;
+  height: 128px;
+}
+
+
+
