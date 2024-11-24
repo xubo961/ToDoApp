@@ -1,25 +1,38 @@
+<div class="container mt-5">
 
-<div class="pt-5"><span align="center" class="text-secondary bg-primary">LOGO</span></div>
-<hr>
-
-<form>
-    <div class="pb-3">
-        <label for="username">Username</label><br>
-        <i class="bi bi-person-circle mr-1"></i>
-        <input type="text" id="username" name="usuario" placeholder="Introducir Usuario" required>
+    <div class="text-center mb-4">
+        <span class="text-secondary bg-primary px-3 py-2 rounded">LOGO</span>
     </div>
 
-    <div class="pb-5">
-        <label for="password">Password</label><br>
-        <i class="bi bi-file-lock-fill"></i>
-        <input type="password" id="password" name="contraseña" placeholder="Introducir Contraseña" required>
+    <h1 class="text-center form-title">LOGIN</h1>
+
+    <div class="card p-4 shadow-sm">
+        <form>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
+                    <input type="text" id="username" name="usuario" class="form-control" placeholder="Introduce tu Usuario" required>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-file-lock-fill"></i></span>
+                    <input type="password" id="password" name="contraseña" class="form-control" placeholder="Introduce tu Contraseña" required>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-6">
+                    <button type="button" class="btn btn-primary w-100" (click)="goPagPrincipal()">Login</button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-primary w-100" (click)="goRegister()">Register</button>
+                </div>
+            </div>
+        </form>
     </div>
+</div>
 
-    <div class="pt-5 row">
-        <div class="col-6"><button type="button" class="btn btn-primary mr-10px" (click)="goPagPrincipal()">Login</button></div>
-        <div class="col-6"><button type="button" class="btn btn-primary" (click)="goRegister()">Register</button></div>
-    </div>
-
-    <hr>
-
-</form>

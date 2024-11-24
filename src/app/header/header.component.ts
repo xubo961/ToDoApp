@@ -21,4 +21,8 @@ export class HeaderComponent {
   goLogin(): void {
     this.router.navigate(['']);
   }
+
+  goGitHub(): void {
+    this.router.navigate(['https://github.com/xubo961']);
+  }
 }

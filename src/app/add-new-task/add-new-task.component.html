@@ -1,38 +1,42 @@
-<div class="divPrincipal text-center row"><h1 class="addTask text-center">ADD NEW TASK</h1>
+<div class="divPrincipal text-center">
+    <h1 class="addTask text-center">ADD NEW TASK</h1>
 
-    <div class="divSecundario row">
-        <div>
-            <form>
-                <label for="tittle">Tittle</label><br>
-                <input id="tittle" type="text" placeholder="Tittle" required><br>
+    <div class="divSecundario">
+        <form class="row g-3">
+            <div class="col-12">
+                <label for="tittle" class="form-label">Título</label>
+                <input id="tittle" type="text" class="form-control" placeholder="Título" required>
+            </div>
 
-                <label for="description">Description</label><br>
-                <textarea id="description" rows="5" cols="23" placeholder=""></textarea><br>
+            <div class="col-12">
+                <label for="description" class="form-label">Descripción</label>
+                <textarea id="description" class="form-control" rows="5" placeholder="Introduce la descipción..."></textarea>
+            </div>
 
+            <div class="col-md-6">
+                <label for="FechaActual" class="form-label">Fecha</label>
+                <input type="date" id="FechaActual" class="form-control" required>
+            </div>
 
-                <label for="FechaActual">Fecha</label><br>
-                <input type="date" id="FechaActual"><br><br>
-
-                <label for="rol">Tema</label>
-                <select id="rol" name="Select" required>
-                    <option value="Select" selected></option>
+            <div class="col-md-6">
+                <label for="rol" class="form-label">Tema</label>
+                <select id="rol" class="form-select" required>
+                    <option value="" selected disabled>Selecciona el campo</option>
                     <option value="Estudio">Estudio</option>
                     <option value="Trabajo">Trabajo</option>
-                    <option value="Estudio">Profesor</option>
-                    <option value="Estudio">Profesor</option>
+                    <option value="Ocio">Ocio</option>
+                    <option value="Hogar">Hogar</option>
+                    <option value="Viajes">Viajes</option>
+                    <option value="Familia">Familia</option>
+                    <option value="Salud">Salud</option>
                 </select>
-            </form>
-        </div>
-        <div class="row">
-            <p class="col-6 mt-3">
-                <button type="button" class="btn btn-primary" (click)="goPagPrincipal()">Submit</button>
-            </p>
+            </div>
 
-            <p class="col-6 mt-3">
-                <button type="button" class="btn btn-primary" (click)="goPagPrincipal()">Cancel</button>
-            </p>
-        </div>
+            <div class="col-12 text-center mt-4">
+                <button type="button" class="btn btn-primary mx-2" (click)="goPagPrincipal()">Guardar</button>
+                <button type="button" class="btn btn-secondary mx-2" (click)="goPagPrincipal()">Cancelar</button>
+            </div>
+        </form>
     </div>
 </div>
-
 
