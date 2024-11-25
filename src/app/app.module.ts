@@ -24,13 +24,13 @@ import { AddNewTaskComponent } from './add-new-task/add-new-task.component';
     LayoutSinHeaderComponent,
     Error404Component,
     RegisterComponent,
-    PaginaPrincipalComponent,
-    AddNewTaskComponent
+    PaginaPrincipalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    AddNewTaskComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
