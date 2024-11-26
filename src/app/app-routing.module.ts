@@ -8,6 +8,9 @@ import {HeaderComponent} from "./header/header.component";
 import {RegisterComponent} from "./register/register.component";
 import {PaginaPrincipalComponent} from "./pagina-principal/pagina-principal.component";
 import {AddNewTaskComponent} from "./add-new-task/add-new-task.component";
+import {ListaTareasExamenComponent} from "./lista-tareas-examen/lista-tareas-examen.component";
+import {DetallesTareaExamenComponent} from "./detalles-tarea-examen/detalles-tarea-examen.component";
+import {TrabajandoConArraysComponent} from "./trabajando-con-arrays/trabajando-con-arrays.component";
 
 const routes: Routes = [
   {
@@ -34,6 +37,27 @@ const routes: Routes = [
     ]
   },
 
+  {
+    path: "",
+    component:LayoutSinHeaderComponent,
+    children: [
+      {path: "tasks", component: ListaTareasExamenComponent},
+    ]
+  },
+  {
+    path: "",
+    component:LayoutSinHeaderComponent,
+    children: [
+      {path: "detallesTarea", component: DetallesTareaExamenComponent},
+    ]
+  },
+  {
+    path: "",
+    component:LayoutSinHeaderComponent,
+    children: [
+      {path: "arrays", component: TrabajandoConArraysComponent},
+    ]
+  },
   {
     path: "**", component: Error404Component
   }

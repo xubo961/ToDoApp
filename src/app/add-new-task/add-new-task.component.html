@@ -10,7 +10,7 @@
 
             <div class="col-12">
                 <label for="description" class="form-label">Descripción</label>
-                <textarea id="description" class="form-control" rows="5" placeholder="Introduce la descipción..." formControlName="descripcion"></textarea>
+                <textarea id="description" class="form-control" rows="5" placeholder="Introduce la descripción..." formControlName="descripcion"></textarea>
             </div>
 
             <div class="col-md-6">
@@ -33,10 +33,9 @@
             </div>
 
             <div class="col-12 text-center mt-4">
-                <button type="submit" [disabled]="!nuevaTarea.valid" class="btn btn-primary mx-2" (click)="goPagPrincipal()">Guardar</button>
+                <button type="submit" [disabled]="!nuevaTarea.valid" class="btn btn-primary mx-2">Guardar</button>
                 <button type="button" class="btn btn-secondary mx-2" (click)="goPagPrincipal()">Cancelar</button>
             </div>
         </form>
     </div>
 </div>
-

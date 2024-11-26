@@ -1,129 +1,18 @@
-<div class="mt-4">
-    <ul>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-    </ul>
-    <section class="x mandatory-scroll-snapping" dir="ltr">
-        <div>asdad</div>
-        <div>asdad</div>
-        <div>asdad</div>
-        <div>asdad</div>
-        <div>asdad</div>
-    </section>
+<div class="divPrincipal z-2">
+    <h1 class="text-center">Página Principal</h1>
+
+    <div class="mt-4">
+        <h2>Tareas</h2>
+        <ul>
+            <li *ngFor="let tarea of tareas">
+                <strong>{{ tarea.titulo }}</strong> - {{ tarea.descripcion }}<br>
+                Fecha: {{ tarea.fecha }} | Tema: {{ tarea.tema }}
+            </li>
+        </ul>
+    </div>
+    <div class="add">
+    <button type="button" class="btn btn-lg align-items-center" (click)="goAdd()">
+        <i class="bi bi-plus-circle-fill text-secondary"></i>
+    </button>
+    </div>
 </div>
-
-<hr>
-    <p class="text-end">Modificado hace "X" días <i class="bi bi-calendar2-event"></i></p>
-<hr>
-
-<div class="mt-4">
-    <ul>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-    </ul>
-    <section class="x mandatory-scroll-snapping" dir="ltr">
-        <div>X Mand. SADAD </div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-    </section>
-</div>
-
-<hr>
-    <p class="text-end">Modificado hace "X" días <i class="bi bi-calendar2-event"></i></p>
-<hr>
-
-<div class="mt-4">
-    <ul>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-    </ul>
-    <section class="x mandatory-scroll-snapping" dir="ltr">
-        <div>X Mand. SADAD </div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-    </section>
-</div>
-
-<hr>
-    <p class="text-end">Modificado hace "X" días <i class="bi bi-calendar2-event"></i></p>
-<hr>
-
-<div class="mt-4">
-    <ul>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-    </ul>
-    <section class="x mandatory-scroll-snapping" dir="ltr">
-        <div>X Mand. SADAD </div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-    </section>
-</div>
-
-<hr>
-    <p class="text-end">Modificado hace "X" días <i class="bi bi-calendar2-event"></i></p>
-<hr>
-
-<div class="mt-4">
-    <ul>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-    </ul>
-    <section class="x mandatory-scroll-snapping" dir="ltr">
-        <div>X Mand. SADAD </div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-    </section>
-</div>
-
-<hr>
-    <p class="text-end">Modificado hace "X" días <i class="bi bi-calendar2-event"></i></p>
-<hr>
-
-<div class="mt-4">
-    <ul>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-        <li>asdad</li>
-    </ul>
-    <section class="x mandatory-scroll-snapping" dir="ltr">
-        <div>X Mand. SADAD </div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-    </section>
-</div>
-
-<hr>
-    <p class="text-end">Modificado hace "X" días <i class="bi bi-calendar2-event"></i></p>
-<hr>
-
-<button id="add" type="button" class="btn btn-lg align-items-center" (click)="goAdd()" >
-    <i class="bi bi-plus-circle-fill text-secondary "></i>
-</button>

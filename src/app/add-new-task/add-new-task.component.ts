@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {Router} from "@angular/router";
 import {FormControl, ReactiveFormsModule, FormGroup, Validators} from '@angular/forms';
+import {TaskService} from "../services/task-service.service";
 
 @Component({
   standalone: true,
@@ -19,7 +20,8 @@ export class AddNewTaskComponent {
   });
 
   constructor(
-      private router: Router
+      private router: Router,
+      private taskService: TaskService
   ) {}
 
   goPagPrincipal() {
@@ -27,6 +29,15 @@ export class AddNewTaskComponent {
   }
 
   onSubmit() {
-    console.warn(this.nuevaTarea.value);
+    if (this.nuevaTarea.valid) {
+      const formData = this.nuevaTarea.value;
+      this.taskService.agregarTarea(formData);
+
+      this.goPagPrincipal();
+    } else {
+      console.warn('Form is not valid');
+    }
   }
+
+
 }

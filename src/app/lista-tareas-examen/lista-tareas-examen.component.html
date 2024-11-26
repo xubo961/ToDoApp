@@ -1,0 +1,29 @@
+<div class="mt-2 text-center">
+    <form>
+    <label for="filtro" class="form-label">Filtrar</label>
+    <select id="filtro" class="form-select">
+        <option value="" selected disabled>Selecciona el campo</option>
+        <option value="Todas">Todas</option>
+        <option value="Pendiente">Pendiente</option>
+        <option value="Finalizado">Finalizado</option>
+    </select>
+</form>
+</div>
+
+<div class="datos container mt-3">
+    <h1 class="text-center form-title">TAREAS</h1>
+
+    <div class="card p-4 shadow-sm text-center">
+        <p *ngFor="let datos of datos">
+            <span>{{datos.nombre}}</span><br>
+            <span>{{datos.estado}}</span><br>
+            <button type="button" class="btn btn-primary w-20" (click)="mostrarDetalles(datos)">Ver Más</button>
+        </p>
+    </div>
+    <br>
+    <button class="btn btn-primary w-100" (click)="goPaginaPrincipal()">Volver</button>
+</div>
+
+<app-detalles-tarea-examen *ngIf="mostrarDetallesTarea"></app-detalles-tarea-examen>
+
+

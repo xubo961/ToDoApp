@@ -13,6 +13,11 @@ import { Error404Component } from './error404/error404.component';
 import { RegisterComponent } from './register/register.component';
 import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
 import { AddNewTaskComponent } from './add-new-task/add-new-task.component';
+import { BotonExamenComponent } from './boton-examen/boton-examen.component';
+import { ListaTareasExamenComponent } from './lista-tareas-examen/lista-tareas-examen.component';
+import { DetallesTareaExamenComponent } from './detalles-tarea-examen/detalles-tarea-examen.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { TrabajandoConArraysComponent } from './trabajando-con-arrays/trabajando-con-arrays.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +29,19 @@ import { AddNewTaskComponent } from './add-new-task/add-new-task.component';
     LayoutSinHeaderComponent,
     Error404Component,
     RegisterComponent,
-    PaginaPrincipalComponent
+    PaginaPrincipalComponent,
+    BotonExamenComponent,
+    ListaTareasExamenComponent,
+    DetallesTareaExamenComponent,
+    TrabajandoConArraysComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    AddNewTaskComponent
+    AddNewTaskComponent,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

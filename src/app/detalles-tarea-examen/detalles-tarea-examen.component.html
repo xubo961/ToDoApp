@@ -1,0 +1,14 @@
+<div class=" divPrincipal container mt-5">
+    <h1 class="text-center form-title">DETALLES TAREAS</h1>
+
+    <div class="detalles card p-4 shadow-sm text-center">
+        <p>
+        <p>{{datos?.id}}</p>
+        <p>{{datos?.nombre}}</p>
+        <p>{{datos?.descripcion}}</p>
+        <p>{{datos?.estado}}</p>
+        <button class="btn btn-primary w-20" type="button" (click)="golistTask()">Cerrar</button>
+    </div>
+</div>
+
+<app-lista-tareas-examen *ngIf="golistTask()"></app-lista-tareas-examen>
