@@ -11,6 +11,8 @@ import {AddNewTaskComponent} from "./add-new-task/add-new-task.component";
 import {ListaTareasExamenComponent} from "./lista-tareas-examen/lista-tareas-examen.component";
 import {DetallesTareaExamenComponent} from "./detalles-tarea-examen/detalles-tarea-examen.component";
 import {TrabajandoConArraysComponent} from "./trabajando-con-arrays/trabajando-con-arrays.component";
+import {ProdcutoComponent} from "./prodcuto/prodcuto.component";
+import {DetallesProductoComponent} from "./detalles-producto/detalles-producto.component";
 
 const routes: Routes = [
   {
@@ -42,6 +44,20 @@ const routes: Routes = [
     component:LayoutSinHeaderComponent,
     children: [
       {path: "tasks", component: ListaTareasExamenComponent},
+    ]
+  },
+  {
+    path: "",
+    component:LayoutSinHeaderComponent,
+    children: [
+      {path: "productos", component: ProdcutoComponent},
+    ]
+  },
+  {
+    path: "",
+    component:LayoutSinHeaderComponent,
+    children: [
+      {path: "detallesProductos", component: DetallesProductoComponent},
     ]
   },
   {

@@ -18,6 +18,9 @@ import { ListaTareasExamenComponent } from './lista-tareas-examen/lista-tareas-e
 import { DetallesTareaExamenComponent } from './detalles-tarea-examen/detalles-tarea-examen.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { TrabajandoConArraysComponent } from './trabajando-con-arrays/trabajando-con-arrays.component';
+import { ProdcutoComponent } from './prodcuto/prodcuto.component';
+import { DetallesProductoComponent } from './detalles-producto/detalles-producto.component';
+import { FiltroProductosComponent } from './filtro-productos/filtro-productos.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { TrabajandoConArraysComponent } from './trabajando-con-arrays/trabajando
     BotonExamenComponent,
     ListaTareasExamenComponent,
     DetallesTareaExamenComponent,
-    TrabajandoConArraysComponent
+    TrabajandoConArraysComponent,
+    ProdcutoComponent,
+    DetallesProductoComponent,
+    FiltroProductosComponent
   ],
   imports: [
     BrowserModule,

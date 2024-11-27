@@ -22,6 +22,10 @@ export class HeaderComponent {
     this.router.navigate(['']);
   }
 
+  goProductos(): void {
+    this.router.navigate(['productos']);
+  }
+
   goGitHub(): void {
     this.router.navigate(['https://github.com/xubo961']);
   }
